@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7DA27ECF4CC0074A6CA /* AppDelegate.swift */; };
 		040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7DC27ECF4CC0074A6CA /* SceneDelegate.swift */; };
-		040AC7DF27ECF4CC0074A6CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7DE27ECF4CC0074A6CA /* ViewController.swift */; };
 		040AC7E227ECF4CC0074A6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7E027ECF4CC0074A6CA /* Main.storyboard */; };
 		040AC7E427ECF4D40074A6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7E327ECF4D40074A6CA /* Assets.xcassets */; };
 		040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */; };
+		040AC7F127ECF62F0074A6CA /* DewaLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */; };
+		040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040AC7D727ECF4CC0074A6CA /* Dewa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dewa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040AC7DA27ECF4CC0074A6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040AC7DC27ECF4CC0074A6CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		040AC7DE27ECF4CC0074A6CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		040AC7E127ECF4CC0074A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040AC7E327ECF4D40074A6CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		040AC7E627ECF4D40074A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040AC7E827ECF4D40074A6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationsVC.swift; sourceTree = "<group>"; };
+		040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceLocationsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				040AC7DA27ECF4CC0074A6CA /* AppDelegate.swift */,
 				040AC7DC27ECF4CC0074A6CA /* SceneDelegate.swift */,
-				040AC7DE27ECF4CC0074A6CA /* ViewController.swift */,
+				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
+				040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */,
 				040AC7E027ECF4CC0074A6CA /* Main.storyboard */,
 				040AC7E327ECF4D40074A6CA /* Assets.xcassets */,
 				040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040AC7DF27ECF4CC0074A6CA /* ViewController.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
 				040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */,
+				040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */,
+				040AC7F127ECF62F0074A6CA /* DewaLocationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
