@@ -16,6 +16,9 @@
 		040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */; };
 		040AC7F827ECF8650074A6CA /* CustomerService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7F727ECF8650074A6CA /* CustomerService.storyboard */; };
 		040AC7FB27ECF88A0074A6CA /* DewaLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7F927ECF88A0074A6CA /* DewaLocations.storyboard */; };
+		040AC80027ECF9840074A6CA /* CustomerServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7FF27ECF9840074A6CA /* CustomerServiceViewModel.swift */; };
+		040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */; };
+		040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceLocationsVC.swift; sourceTree = "<group>"; };
 		040AC7F727ECF8650074A6CA /* CustomerService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomerService.storyboard; sourceTree = "<group>"; };
 		040AC7FA27ECF88A0074A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dewa/Base.lproj/DewaLocations.storyboard; sourceTree = "<group>"; };
+		040AC7FF27ECF9840074A6CA /* CustomerServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceViewModel.swift; sourceTree = "<group>"; };
+		040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceWebService.swift; sourceTree = "<group>"; };
+		040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,10 @@
 		040AC7FD27ECF8A10074A6CA /* CustomerServiceLocations */ = {
 			isa = PBXGroup;
 			children = (
-				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
-				040AC7F727ECF8650074A6CA /* CustomerService.storyboard */,
+				040AC80427ECFA5A0074A6CA /* Model */,
+				040AC80527ECFA640074A6CA /* View */,
+				040AC80327ECFA4A0074A6CA /* ViewModel */,
+				040AC80627ECFA6E0074A6CA /* Network */,
 			);
 			path = CustomerServiceLocations;
 			sourceTree = "<group>";
@@ -98,6 +106,39 @@
 				040AC7DC27ECF4CC0074A6CA /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		040AC80327ECFA4A0074A6CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				040AC7FF27ECF9840074A6CA /* CustomerServiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		040AC80427ECFA5A0074A6CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		040AC80527ECFA640074A6CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
+				040AC7F727ECF8650074A6CA /* CustomerService.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040AC80627ECFA6E0074A6CA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
 				040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */,
+				040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */,
 				040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */,
+				040AC80027ECF9840074A6CA /* CustomerServiceViewModel.swift in Sources */,
 				040AC7F127ECF62F0074A6CA /* DewaLocationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

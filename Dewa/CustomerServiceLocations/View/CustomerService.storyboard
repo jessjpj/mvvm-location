@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,21 +8,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Customer Service-->
+        <!--Customer Service LocationsVC-->
         <scene sceneID="br9-eN-iue">
             <objects>
                 <viewController storyboardIdentifier="CustomerServiceLocationsVC" id="TCC-hl-san" customClass="CustomerServiceLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hr4-mB-iYA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="SUr-kE-Dek"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Customer Service" id="De9-KN-swR"/>
+                    <navigationItem key="navigationItem" id="J59-DU-7tJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwH-7o-bo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-941" y="1069"/>
+            <point key="canvasLocation" x="-31.884057971014496" y="1068.75"/>
+        </scene>
+        <!--Customer Service-->
+        <scene sceneID="hUZ-4q-vjp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DAI-Hv-shP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Customer Service" id="De9-KN-swR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yP9-ea-TsL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TCC-hl-san" kind="relationship" relationship="rootViewController" id="KGl-FA-qxX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19O-O1-4WY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942.02898550724649" y="1068.75"/>
         </scene>
     </scenes>
     <resources>

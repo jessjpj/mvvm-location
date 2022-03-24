@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,21 +8,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dewa Locations-->
+        <!--Dewa LocationsVC-->
         <scene sceneID="6rh-Ti-ito">
             <objects>
                 <viewController storyboardIdentifier="DewaLocationsVC" id="12r-78-QNr" customClass="DewaLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gLN-eQ-xLZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7Hj-IJ-Mq2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="NjC-e3-LsC"/>
+                    <navigationItem key="navigationItem" id="WDr-jr-f9w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ki5-BS-yHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="1069"/>
+            <point key="canvasLocation" x="771.01449275362324" y="1068.75"/>
+        </scene>
+        <!--Dewa Locations-->
+        <scene sceneID="0m4-9B-nz1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rQt-pO-d25" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="NjC-e3-LsC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fbM-Ip-u79">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="12r-78-QNr" kind="relationship" relationship="rootViewController" id="J2R-gx-UVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sre-S5-RFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139.13043478260872" y="1068.75"/>
         </scene>
     </scenes>
     <resources>
