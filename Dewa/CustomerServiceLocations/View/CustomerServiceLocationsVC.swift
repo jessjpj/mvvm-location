@@ -9,21 +9,21 @@ import UIKit
 
 class CustomerServiceLocationsVC: UIViewController {
 
+    var viewModel: CustomerServiceViewModel?
+    var webservice = CustomerServiceWebService()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.webservice = CustomerServiceWebService()
+        self.viewModel = CustomerServiceViewModel(service: self.webservice)
+        self.title = self.viewModel?.title
+        loadLocations()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadLocations() {
+        viewModel?.getCustomerServiceLocations(completion: { viewModel in
+            self.viewModel = viewModel
+        })
     }
-    */
 
 }
