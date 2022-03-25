@@ -1,0 +1,290 @@
+{
+    "LocationsApp": {
+        "FileVer": "99",
+        "Dist": "60",
+        "Cordinate": {
+            "item": [
+                {
+                    "id": "2",
+                    "office": "Al MANARA CSO",
+                    "lat": "25.15652",
+                    "lon": "55.227276",
+                    "loc": "Al MANARA"
+                },
+                {
+                    "id": "3",
+                    "office": "Al Qusais -Near to Exit - 2",
+                    "lat": "25.283278",
+                    "lon": "55.364368",
+                    "loc": "Qusais "
+                },
+                {
+                    "id": "5",
+                    "office": "Al Qusais (Muhaisnah 4)",
+                    "lat": "25.2859122897859",
+                    "lon": "55.4081296920776",
+                    "loc": "Qusais Office Muhaisnah"
+                },
+                {
+                    "id": "6",
+                    "office": "AL QUOZ Office",
+                    "lat": "25.154103",
+                    "lon": "55.232188",
+                    "loc": "Al Qouz N-Build"
+                },
+                {
+                    "id": "8",
+                    "office": "AL TAWAR CSO",
+                    "lat": "25.262824",
+                    "lon": "55.384768",
+                    "loc": "AL TAWAR"
+                },
+                {
+                    "id": "9",
+                    "office": "MUSHRIF-H.S.E OFFICE",
+                    "lat": "25.233022",
+                    "lon": "55.407652",
+                    "loc": "MUSHRIF"
+                },
+                {
+                    "id": "15",
+                    "office": "AL WASEL-NEAR EXIT - 2",
+                    "lat": "25.199804",
+                    "lon": "55.262607",
+                    "loc": "ALWASEL"
+                },
+                {
+                    "id": "16",
+                    "office": "AWEER-Well Field office",
+                    "lat": "25.155794",
+                    "lon": "55.517747",
+                    "loc": "AWEER"
+                },
+                {
+                    "id": "18",
+                    "office": "AYAL NASSER CSO",
+                    "lat": "25.275102602049",
+                    "lon": "55.3031292557716",
+                    "loc": "AYAL NASSER"
+                },
+                {
+                    "id": "19",
+                    "office": "Customer Service Office at DRFA - Jebel Ali",
+                    "lat": "25.0079318563384",
+                    "lon": "55.0854760408401",
+                    "loc": "JEBEL ALI CSO"
+                },
+                {
+                    "id": "20",
+                    "office": "JEBEL ALI CSO",
+                    "lat": "24.9965748675562",
+                    "lon": "55.104353427887",
+                    "loc": "JEBEL ALI CSO"
+                },
+                {
+                    "id": "21",
+                    "office": "JEBEL ALI ZONAL OFFICE",
+                    "lat": "24.98513416828",
+                    "lon": "55.0952580571175",
+                    "loc": "Japs Zonal Ofc"
+                },
+                {
+                    "id": "24",
+                    "office": "Discovery Garden",
+                    "lat": "25.0474446292902",
+                    "lon": "55.1312452554703",
+                    "loc": "Discovery Gard"
+                },
+                {
+                    "id": "25",
+                    "office": "HATTA-Main office",
+                    "lat": "24.809249",
+                    "lon": "56.12613",
+                    "loc": "HATTA"
+                },
+                {
+                    "id": "26",
+                    "office": "Head Office",
+                    "lat": "25.2273081",
+                    "lon": "55.3241885",
+                    "loc": "HEAD OFFICE"
+                },
+                {
+                    "id": "36",
+                    "office": "NAJMA- Office",
+                    "lat": "25.1397874390187",
+                    "lon": "55.263386964798",
+                    "loc": "NAJMA"
+                },
+                {
+                    "id": "43",
+                    "office": "RAMOOL-First Floor",
+                    "lat": "25.225523842425",
+                    "lon": "55.3760156035423",
+                    "loc": "RAMOOL"
+                },
+                {
+                    "id": "44",
+                    "office": "SATWA-CIVIL MAINT.FIELD OFFICE",
+                    "lat": "25.2458725767802",
+                    "lon": "55.2786433696747",
+                    "loc": "SATWA"
+                },
+                {
+                    "id": "46",
+                    "office": "UMM HURAIR CB WORK SHOP",
+                    "lat": "25.2457537017343",
+                    "lon": "55.3106260299683",
+                    "loc": "UMM HURAIR"
+                },
+                {
+                    "id": "49",
+                    "office": "Al WARQA Office",
+                    "lat": "25.1852579167021",
+                    "lon": "55.3999328613281",
+                    "loc": "Al WARQA"
+                },
+                {
+                    "id": "50",
+                    "office": "WARSAN Office",
+                    "lat": "25.1466265527",
+                    "lon": "55.4333483033",
+                    "loc": "WARSAN"
+                },
+                {
+                    "id": "64",
+                    "office": "Ruwayyah Office",
+                    "lat": "25.149582138863",
+                    "lon": "55.4917341470718",
+                    "loc": "Ruwayyah"
+                },
+                {
+                    "id": "71",
+                    "office": "AWEER- H-STN",
+                    "lat": "25.15208701841",
+                    "lon": "55.42401776726",
+                    "loc": "Aweer H Stn"
+                },
+                {
+                    "id": "152",
+                    "office": "JEBEL ALI Office",
+                    "lat": "25.0625678136154",
+                    "lon": "55.1184296607971",
+                    "loc": "JEBEL ALI"
+                },
+                {
+                    "id": "287",
+                    "office": "Customer Service Office at DNRD",
+                    "lat": "25.234807",
+                    "lon": "55.291288",
+                    "loc": "CSO - DNRD"
+                },
+                {
+                    "id": "288",
+                    "office": "Al Qouz Office 1",
+                    "lat": "25.112740",
+                    "lon": "55.229327",
+                    "loc": "Al Qouz Office"
+                },
+                {
+                    "id": "289",
+                    "office": "JA - RO - Plant - Palm Jumairah",
+                    "lat": "25.1401918",
+                    "lon": "55.1302641",
+                    "loc": "JA RO PLANT"
+                },
+                {
+                    "id": "290",
+                    "office": "AWEER-Well Field office",
+                    "lat": "25.1763836440",
+                    "lon": "55.5536797642",
+                    "loc": "AWEER"
+                },
+                {
+                    "id": "291",
+                    "office": "MBR Solar Park",
+                    "lat": "24.767515",
+                    "lon": "55.368857",
+                    "loc": "MBR Solar Park"
+                },
+                {
+                    "id": "292",
+                    "office": "Hassyan complex",
+                    "lat": "24.907666",
+                    "lon": "54.920416",
+                    "loc": "Hassyan complex"
+                },
+                {
+                    "id": "293",
+                    "office": "Hassyan complex",
+                    "lat": "24.90233852",
+                    "lon": "54.93230581",
+                    "loc": "Hassyan complex"
+                },
+                {
+                    "id": "294",
+                    "office": "Hassyan complex",
+                    "lat": "24.90151136",
+                    "lon": "54.93252038",
+                    "loc": "Hassyan complex"
+                },
+                {
+                    "id": "315",
+                    "office": "HUDAIBA OFFICE",
+                    "lat": "25.245489264990436",
+                    "lon": "55.28025269508362",
+                    "loc": "HUDAIBA"
+                },
+                {
+                    "id": "320",
+                    "office": "DEWA CAMPUS",
+                    "lat": "25.243770978679805",
+                    "lon": "55.280957034496396",
+                    "loc": "DEWA CAMPUS"
+                },
+                {
+                    "id": "321",
+                    "office": "JEBEL ALI Industrial Area",
+                    "lat": "24.980637",
+                    "lon": "55.133671",
+                    "loc": "Jabel Ali Ind"
+                },
+                {
+                    "id": "322",
+                    "office": "RAMOOL OFFICE",
+                    "lat": "25.220302",
+                    "lon": "55.380219",
+                    "loc": "RAMOOL"
+                },
+                {
+                    "id": "401",
+                    "office": "DUBAI LAND RESIDENCE",
+                    "lat": "25.089389",
+                    "lon": "55.386528",
+                    "loc": "DLNDRESD"
+                },
+                {
+                    "id": "402",
+                    "office": "BUSINESS TOWER",
+                    "lat": "25.189750",
+                    "lon": "55.269472",
+                    "loc": "BSNSTOWR"
+                },
+                {
+                    "id": "403",
+                    "office": "LABOUR CITY",
+                    "lat": "25.235040",
+                    "lon": "55.547430",
+                    "loc": "LABORCTY"
+                },
+                {
+                    "id": "504",
+                    "office": "HATTA Pumping Station Phase 1",
+                    "lat": "25.033459",
+                    "lon": "55.579579",
+                    "loc": "HATTA PS 1"
+                }
+            ]
+        }
+    }
+}
