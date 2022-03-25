@@ -14,11 +14,12 @@
 		040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */; };
 		040AC7F127ECF62F0074A6CA /* DewaLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */; };
 		040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */; };
-		040AC7F827ECF8650074A6CA /* CustomerService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7F727ECF8650074A6CA /* CustomerService.storyboard */; };
-		040AC7FB27ECF88A0074A6CA /* DewaLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC7F927ECF88A0074A6CA /* DewaLocations.storyboard */; };
 		040AC80027ECF9840074A6CA /* CustomerServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC7FF27ECF9840074A6CA /* CustomerServiceViewModel.swift */; };
 		040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */; };
 		040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */; };
+		040AC80B27ED85A20074A6CA /* AEXML in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC80A27ED85A20074A6CA /* AEXML */; };
+		040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */; };
+		040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80E27EDB9180074A6CA /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +32,11 @@
 		040AC7E827ECF4D40074A6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationsVC.swift; sourceTree = "<group>"; };
 		040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceLocationsVC.swift; sourceTree = "<group>"; };
-		040AC7F727ECF8650074A6CA /* CustomerService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomerService.storyboard; sourceTree = "<group>"; };
-		040AC7FA27ECF88A0074A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dewa/Base.lproj/DewaLocations.storyboard; sourceTree = "<group>"; };
 		040AC7FF27ECF9840074A6CA /* CustomerServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceViewModel.swift; sourceTree = "<group>"; };
 		040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceWebService.swift; sourceTree = "<group>"; };
 		040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceModel.swift; sourceTree = "<group>"; };
+		040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
+		040AC80E27EDB9180074A6CA /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC80B27ED85A20074A6CA /* AEXML in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +77,7 @@
 				040AC7E327ECF4D40074A6CA /* Assets.xcassets */,
 				040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */,
 				040AC7E827ECF4D40074A6CA /* Info.plist */,
+				040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */,
 			);
 			path = Dewa;
 			sourceTree = "<group>";
@@ -83,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */,
-				040AC7F927ECF88A0074A6CA /* DewaLocations.storyboard */,
 			);
 			path = DewaLocations;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 			children = (
 				040AC7DA27ECF4CC0074A6CA /* AppDelegate.swift */,
 				040AC7DC27ECF4CC0074A6CA /* SceneDelegate.swift */,
+				040AC80E27EDB9180074A6CA /* AppConfiguration.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -128,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
-				040AC7F727ECF8650074A6CA /* CustomerService.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = Dewa;
+			packageProductDependencies = (
+				040AC80A27ED85A20074A6CA /* AEXML */,
+			);
 			productName = Dewa;
 			productReference = 040AC7D727ECF4CC0074A6CA /* Dewa.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +190,9 @@
 				Base,
 			);
 			mainGroup = 040AC7CE27ECF4CC0074A6CA;
+			packageReferences = (
+				040AC80927ED85A20074A6CA /* XCRemoteSwiftPackageReference "AEXML" */,
+			);
 			productRefGroup = 040AC7D827ECF4CC0074A6CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,8 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040AC7F827ECF8650074A6CA /* CustomerService.storyboard in Resources */,
-				040AC7FB27ECF88A0074A6CA /* DewaLocations.storyboard in Resources */,
 				040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */,
 				040AC7E427ECF4D40074A6CA /* Assets.xcassets in Resources */,
 				040AC7E227ECF4CC0074A6CA /* Main.storyboard in Resources */,
@@ -214,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */,
 				040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
+				040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */,
 				040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */,
 				040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */,
 				040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */,
@@ -241,14 +249,6 @@
 				040AC7E627ECF4D40074A6CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		040AC7F927ECF88A0074A6CA /* DewaLocations.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040AC7FA27ECF88A0074A6CA /* Base */,
-			);
-			name = DewaLocations.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -394,6 +394,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				customerServiceLocationURL = "https://smartapps.dewa.gov.ae/iphone/Locations/Locations-En.xml";
 			};
 			name = Debug;
 		};
@@ -421,6 +422,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				customerServiceLocationURL = "https://smartapps.dewa.gov.ae/iphone/Locations/Locations-En.xml";
 			};
 			name = Release;
 		};
@@ -446,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040AC80927ED85A20074A6CA /* XCRemoteSwiftPackageReference "AEXML" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tadija/AEXML.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040AC80A27ED85A20074A6CA /* AEXML */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AC80927ED85A20074A6CA /* XCRemoteSwiftPackageReference "AEXML" */;
+			productName = AEXML;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 040AC7CF27ECF4CC0074A6CA /* Project object */;
 }
