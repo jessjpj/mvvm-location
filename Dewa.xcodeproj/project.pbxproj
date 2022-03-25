@@ -20,7 +20,6 @@
 		040AC80B27ED85A20074A6CA /* AEXML in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC80A27ED85A20074A6CA /* AEXML */; };
 		040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */; };
 		040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80E27EDB9180074A6CA /* AppConfiguration.swift */; };
-		040AC81227EDC7880074A6CA /* CustomerServiceLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC81027EDC7880074A6CA /* CustomerServiceLocations.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceModel.swift; sourceTree = "<group>"; };
 		040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
 		040AC80E27EDB9180074A6CA /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
-		040AC81127EDC7880074A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dewa/Base.lproj/CustomerServiceLocations.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
-				040AC81027EDC7880074A6CA /* CustomerServiceLocations.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */,
-				040AC81227EDC7880074A6CA /* CustomerServiceLocations.storyboard in Resources */,
 				040AC7E427ECF4D40074A6CA /* Assets.xcassets in Resources */,
 				040AC7E227ECF4CC0074A6CA /* Main.storyboard in Resources */,
 			);
@@ -253,14 +249,6 @@
 				040AC7E627ECF4D40074A6CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		040AC81027EDC7880074A6CA /* CustomerServiceLocations.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				040AC81127EDC7880074A6CA /* Base */,
-			);
-			name = CustomerServiceLocations.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
