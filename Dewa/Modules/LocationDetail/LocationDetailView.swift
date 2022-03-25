@@ -1,5 +1,5 @@
 //
-//  CustomerServiceLocationView.swift
+//  LocationDetailView.swift
 //  Dewa
 //
 //  Created by Mac on 25/03/2022.
@@ -8,10 +8,13 @@
 import Foundation
 import UIKit
 
-final class CustomerServiceLocationView: UIView {
+class LocationDetailView: UIView {
 
-    @IBOutlet weak var collectionView: CollectionServiceLocationCollectionView!
-
+    var viewModel: LocationDetailViewModel? {
+        didSet {
+            configure()
+        }
+    }
     init() {
         super.init(frame: .zero)
         setupUI()
@@ -27,7 +30,7 @@ final class CustomerServiceLocationView: UIView {
     }
 }
 
-extension CustomerServiceLocationView {
+extension LocationDetailView {
     func setupUI() {
         
     }
