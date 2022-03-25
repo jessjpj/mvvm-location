@@ -20,6 +20,8 @@
 		040AC80B27ED85A20074A6CA /* AEXML in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC80A27ED85A20074A6CA /* AEXML */; };
 		040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */; };
 		040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80E27EDB9180074A6CA /* AppConfiguration.swift */; };
+		040AC81827EDD2BD0074A6CA /* DewaLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */; };
+		040AC81A27EDD2EE0074A6CA /* CustomerServiceLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		040AC80727ECFA910074A6CA /* CustomerServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceModel.swift; sourceTree = "<group>"; };
 		040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
 		040AC80E27EDB9180074A6CA /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DewaLocations.storyboard; sourceTree = "<group>"; };
+		040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomerServiceLocations.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		040AC7FC27ECF8950074A6CA /* DewaLocations */ = {
 			isa = PBXGroup;
 			children = (
+				040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */,
 				040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */,
 			);
 			path = DewaLocations;
@@ -130,6 +135,7 @@
 		040AC80527ECFA640074A6CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */,
 				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
 			);
 			path = View;
@@ -207,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC81A27EDD2EE0074A6CA /* CustomerServiceLocations.storyboard in Resources */,
+				040AC81827EDD2BD0074A6CA /* DewaLocations.storyboard in Resources */,
 				040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */,
 				040AC7E427ECF4D40074A6CA /* Assets.xcassets in Resources */,
 				040AC7E227ECF4CC0074A6CA /* Main.storyboard in Resources */,
