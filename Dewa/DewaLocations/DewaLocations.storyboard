@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Oq-uy-7Mg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dewa Locations-->
+        <scene sceneID="FBj-FK-n9K">
+            <objects>
+                <viewController storyboardIdentifier="DewaLocationsVC" id="bvC-CM-AQZ" customClass="DewaLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJX-Ns-5zV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4AK-BH-Ueu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="2Tb-4g-aev"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flS-eu-ShG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497" y="1406"/>
+        </scene>
+        <!--Customer Service Locations-->
+        <scene sceneID="0MW-as-Lfl">
+            <objects>
+                <viewController storyboardIdentifier="CustomerServiceLocationsVC" id="015-r4-eRC" customClass="CustomerServiceLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vdA-zu-aRa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xO9-Lq-4MV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Customer Service Locations" id="qKD-6P-Fhr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5g-gw-n08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497" y="2050"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vD5-5a-FW9">
+            <objects>
+                <tabBarController id="2Oq-uy-7Mg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tfm-As-NUp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="015-r4-eRC" kind="relationship" relationship="viewControllers" id="Qqx-Ve-6Xp"/>
+                        <segue destination="bvC-CM-AQZ" kind="relationship" relationship="viewControllers" id="Xti-Og-YtI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Bb-DZ-yAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2483" y="1902"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
