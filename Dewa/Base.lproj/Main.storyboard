@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Dewa Locations-->
         <scene sceneID="FBj-FK-n9K">
             <objects>
                 <viewController storyboardIdentifier="DewaLocationsVC" id="bvC-CM-AQZ" customClass="DewaLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="4AK-BH-Ueu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="2Tb-4g-aev"/>
+                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="2Tb-4g-aev"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flS-eu-ShG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1497" y="1406"/>
         </scene>
-        <!--Item 1-->
+        <!--Customer Service Locations-->
         <scene sceneID="0MW-as-Lfl">
             <objects>
                 <viewController storyboardIdentifier="CustomerServiceLocationsVC" id="015-r4-eRC" customClass="CustomerServiceLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="xO9-Lq-4MV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="qKD-6P-Fhr"/>
+                    <tabBarItem key="tabBarItem" title="Customer Service Locations" id="qKD-6P-Fhr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5g-gw-n08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
