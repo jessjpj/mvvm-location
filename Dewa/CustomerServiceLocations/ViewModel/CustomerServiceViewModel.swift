@@ -7,6 +7,7 @@
 
 import Foundation
 import AEXML
+import CoreLocation
 
 class CustomerServiceViewModel {
     private(set) var webservice :CustomerServiceWebService!
@@ -44,8 +45,8 @@ extension CustomerServiceViewModel {
                 guard let serviceCenters = customerService?.children else {
                     return
                 }
-                var models = [ServiceCenterModel]()
-                self.parseData(serviceCenters, &models)
+                self.models = [ServiceCenterModel]()
+                self.parseData(serviceCenters)
                 DispatchQueue.main.async {
                     completion(self)
                 }
@@ -59,8 +60,9 @@ extension CustomerServiceViewModel {
         
     }
 
-    fileprivate func parseData(_ serviceCenters: [AEXMLElement], _ models: inout [ServiceCenterModel]) {
+    fileprivate func parseData(_ serviceCenters: [AEXMLElement]) {
         for serviceCenter in serviceCenters {
+            let id = serviceCenter.children.filter { $0.name == "id" }.first
             let title = serviceCenter.children.filter { $0.name == "title" }.first
             let latitude = serviceCenter.children.filter { $0.name == "latitude" }.first
             let longitude = serviceCenter.children.filter { $0.name == "longitude" }.first
@@ -86,6 +88,7 @@ extension CustomerServiceViewModel {
             let services = serviceCenter.children.filter { $0.name == "services" }.first
             let serviceList = services?.children.compactMap { $0.value }
             let model = ServiceCenterModel(
+                id: id?.int ?? 0,
                 title: title?.string,
                 latitude: latitude?.string,
                 longitude: longitude?.string,
@@ -108,8 +111,29 @@ extension CustomerServiceViewModel {
                 businesscardlink: businesscardlink?.string,
                 image: image?.string,
                 map: map?.string,
-                services: serviceList)
+                services: serviceList,
+                currentLocation: nil)
             models.append(model)
+        }
+    }
+}
+
+extension CustomerServiceViewModel {
+    func numberOfSections() -> Int {
+        return 1
+    }
+
+    func numberOfRows() -> Int {
+        return models.count
+    }
+
+    func getItem(at indexPathRow: Int) -> ServiceCenterModel {
+        return models[indexPathRow]
+    }
+
+    func updateCurrentLocation(location: CLLocation) {
+        for row in models.indices {
+            models[row].currentLocation = location
         }
     }
 }

@@ -28,7 +28,7 @@
         <scene sceneID="GDy-zw-PDe">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="DewaLocationsVC" storyboardName="DewaLocations" referencedIdentifier="DewaLocationsVC" id="8VF-z4-KWO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PXy-sr-Mpt"/>
+                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="PXy-sr-Mpt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7i-1x-lTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +38,7 @@
         <scene sceneID="aKJ-nl-YxH">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="CustomerServiceLocationsVC" storyboardName="CustomerServiceLocations" referencedIdentifier="CustomerServiceLocationsVC" id="r1F-rn-Lfc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Gjs-WC-7rG"/>
+                    <tabBarItem key="tabBarItem" title="Customer Service Locations" id="Gjs-WC-7rG"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZL-l8-gi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,6 +22,15 @@
 		040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC80E27EDB9180074A6CA /* AppConfiguration.swift */; };
 		040AC81827EDD2BD0074A6CA /* DewaLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */; };
 		040AC81A27EDD2EE0074A6CA /* CustomerServiceLocations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */; };
+		040AC81E27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC81D27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift */; };
+		040AC82027EDEB970074A6CA /* CustomerServiceLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC81F27EDEB970074A6CA /* CustomerServiceLocationView.swift */; };
+		040AC82327EDEE690074A6CA /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC82227EDEE690074A6CA /* Observer.swift */; };
+		040AC82727EDEF060074A6CA /* CustomerServiceLocationCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC82527EDEF060074A6CA /* CustomerServiceLocationCVC.swift */; };
+		040AC82827EDEF060074A6CA /* CustomerServiceLocationCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040AC82627EDEF060074A6CA /* CustomerServiceLocationCVC.xib */; };
+		040AC82B27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC82A27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift */; };
+		040AC83127EDFF1D0074A6CA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC83027EDFF1D0074A6CA /* SDWebImage */; };
+		040AC83327EDFF1D0074A6CA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC83227EDFF1D0074A6CA /* SDWebImageMapKit */; };
+		040AC83527EE12E60074A6CA /* CLLocationDistance+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC83427EE12E60074A6CA /* CLLocationDistance+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +50,13 @@
 		040AC80E27EDB9180074A6CA /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DewaLocations.storyboard; sourceTree = "<group>"; };
 		040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomerServiceLocations.storyboard; sourceTree = "<group>"; };
+		040AC81D27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionServiceLocationCollectionView.swift; sourceTree = "<group>"; };
+		040AC81F27EDEB970074A6CA /* CustomerServiceLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceLocationView.swift; sourceTree = "<group>"; };
+		040AC82227EDEE690074A6CA /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		040AC82527EDEF060074A6CA /* CustomerServiceLocationCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceLocationCVC.swift; sourceTree = "<group>"; };
+		040AC82627EDEF060074A6CA /* CustomerServiceLocationCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceLocationCVC.xib; sourceTree = "<group>"; };
+		040AC82A27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		040AC83427EE12E60074A6CA /* CLLocationDistance+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationDistance+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC83127EDFF1D0074A6CA /* SDWebImage in Frameworks */,
+				040AC83327EDFF1D0074A6CA /* SDWebImageMapKit in Frameworks */,
 				040AC80B27ED85A20074A6CA /* AEXML in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +95,8 @@
 				040AC7FE27ECF8B60074A6CA /* Application */,
 				040AC7FD27ECF8A10074A6CA /* CustomerServiceLocations */,
 				040AC7FC27ECF8950074A6CA /* DewaLocations */,
+				040AC82127EDEE4D0074A6CA /* Common */,
+				040AC82927EDEF170074A6CA /* Extensions */,
 				040AC7E027ECF4CC0074A6CA /* Main.storyboard */,
 				040AC7E327ECF4D40074A6CA /* Assets.xcassets */,
 				040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */,
@@ -137,6 +157,9 @@
 			children = (
 				040AC81927EDD2EE0074A6CA /* CustomerServiceLocations.storyboard */,
 				040AC7F227ECF64B0074A6CA /* CustomerServiceLocationsVC.swift */,
+				040AC81F27EDEB970074A6CA /* CustomerServiceLocationView.swift */,
+				040AC81D27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift */,
+				040AC82427EDEECD0074A6CA /* CollectionViewCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +170,32 @@
 				040AC80127ECFA090074A6CA /* CustomerServiceWebService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		040AC82127EDEE4D0074A6CA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				040AC82227EDEE690074A6CA /* Observer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		040AC82427EDEECD0074A6CA /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				040AC82527EDEF060074A6CA /* CustomerServiceLocationCVC.swift */,
+				040AC82627EDEF060074A6CA /* CustomerServiceLocationCVC.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		040AC82927EDEF170074A6CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				040AC82A27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift */,
+				040AC83427EE12E60074A6CA /* CLLocationDistance+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +216,8 @@
 			name = Dewa;
 			packageProductDependencies = (
 				040AC80A27ED85A20074A6CA /* AEXML */,
+				040AC83027EDFF1D0074A6CA /* SDWebImage */,
+				040AC83227EDFF1D0074A6CA /* SDWebImageMapKit */,
 			);
 			productName = Dewa;
 			productReference = 040AC7D727ECF4CC0074A6CA /* Dewa.app */;
@@ -198,6 +249,7 @@
 			mainGroup = 040AC7CE27ECF4CC0074A6CA;
 			packageReferences = (
 				040AC80927ED85A20074A6CA /* XCRemoteSwiftPackageReference "AEXML" */,
+				040AC82F27EDFF1D0074A6CA /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 040AC7D827ECF4CC0074A6CA /* Products */;
 			projectDirPath = "";
@@ -216,6 +268,7 @@
 				040AC81A27EDD2EE0074A6CA /* CustomerServiceLocations.storyboard in Resources */,
 				040AC81827EDD2BD0074A6CA /* DewaLocations.storyboard in Resources */,
 				040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */,
+				040AC82827EDEF060074A6CA /* CustomerServiceLocationCVC.xib in Resources */,
 				040AC7E427ECF4D40074A6CA /* Assets.xcassets in Resources */,
 				040AC7E227ECF4CC0074A6CA /* Main.storyboard in Resources */,
 			);
@@ -228,11 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC82027EDEB970074A6CA /* CustomerServiceLocationView.swift in Sources */,
+				040AC82327EDEE690074A6CA /* Observer.swift in Sources */,
 				040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */,
+				040AC81E27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift in Sources */,
 				040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
 				040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */,
 				040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */,
+				040AC82B27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift in Sources */,
+				040AC83527EE12E60074A6CA /* CLLocationDistance+Extensions.swift in Sources */,
+				040AC82727EDEF060074A6CA /* CustomerServiceLocationCVC.swift in Sources */,
 				040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */,
 				040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */,
 				040AC80027ECF9840074A6CA /* CustomerServiceViewModel.swift in Sources */,
@@ -466,6 +525,14 @@
 				kind = branch;
 			};
 		};
+		040AC82F27EDFF1D0074A6CA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -473,6 +540,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 040AC80927ED85A20074A6CA /* XCRemoteSwiftPackageReference "AEXML" */;
 			productName = AEXML;
+		};
+		040AC83027EDFF1D0074A6CA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AC82F27EDFF1D0074A6CA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		040AC83227EDFF1D0074A6CA /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AC82F27EDFF1D0074A6CA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

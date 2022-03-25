@@ -9,11 +9,18 @@ import UIKit
 
 class CustomerServiceLocationsVC: UIViewController {
 
-    var viewModel: CustomerServiceViewModel?
+    var viewModel: CustomerServiceViewModel? {
+        didSet {
+            contentView.collectionView.viewModel = viewModel
+        }
+    }
     var webservice = CustomerServiceWebService()
+
+    @IBOutlet weak var contentView: CustomerServiceLocationView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view = contentView
         self.webservice = CustomerServiceWebService()
         self.viewModel = CustomerServiceViewModel(service: self.webservice)
         self.title = self.viewModel?.title

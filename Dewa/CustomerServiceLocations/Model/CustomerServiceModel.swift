@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import CoreLocation
 
-struct ServiceCenterModel {
+struct ServiceCenterModel: Hashable {
+    let id: Int
     let title: String
     let latitude: String
     let longitude: String
@@ -31,8 +33,10 @@ struct ServiceCenterModel {
     let image: String
     let map: String
     let services: [String]
+    var currentLocation: CLLocation?
 
     init(
+        id: Int,
         title: String?,
         latitude: String?,
         longitude: String?,
@@ -55,29 +59,40 @@ struct ServiceCenterModel {
         businesscardlink: String?,
         image: String?,
         map: String?,
-        services: [String]?) {
-        self.title = title ?? ""
-        self.latitude = latitude ?? ""
-        self.longitude = longitude ?? ""
-        self.shortAddress = shortAddress ?? ""
-        self.longAddress = longAddress ?? ""
-        self.addressline1 = addressline1 ?? ""
-        self.landmark = landmark ?? ""
-        self.city = city ?? ""
-        self.countrycode = countrycode ?? ""
-        self.zipcode = zipcode ?? ""
-        self.officenumber = officenumber ?? ""
-        self.callcenternumber = callcenternumber ?? ""
-        self.emergencynumber = emergencynumber ?? ""
-        self.workinghours = workinghours ?? ""
-        self.website = website ?? ""
-        self.email = email ?? ""
-        self.makaninumber = makaninumber ?? ""
-        self.contacttext = contacttext ?? ""
-        self.businesscardtext = businesscardtext ?? ""
-        self.businesscardlink = businesscardlink ?? ""
-        self.image = image ?? ""
-        self.map = map ?? ""
-        self.services = services ?? [String]()
+        services: [String]?,
+        currentLocation: CLLocation?) {
+            self.id = id
+            self.title = title ?? ""
+            self.latitude = latitude ?? ""
+            self.longitude = longitude ?? ""
+            self.shortAddress = shortAddress ?? ""
+            self.longAddress = longAddress ?? ""
+            self.addressline1 = addressline1 ?? ""
+            self.landmark = landmark ?? ""
+            self.city = city ?? ""
+            self.countrycode = countrycode ?? ""
+            self.zipcode = zipcode ?? ""
+            self.officenumber = officenumber ?? ""
+            self.callcenternumber = callcenternumber ?? ""
+            self.emergencynumber = emergencynumber ?? ""
+            self.workinghours = workinghours ?? ""
+            self.website = website ?? ""
+            self.email = email ?? ""
+            self.makaninumber = makaninumber ?? ""
+            self.contacttext = contacttext ?? ""
+            self.businesscardtext = businesscardtext ?? ""
+            self.businesscardlink = businesscardlink ?? ""
+            self.image = image ?? ""
+            self.map = map ?? ""
+            self.services = services ?? [String]()
+            self.currentLocation = currentLocation
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func == (lhs: ServiceCenterModel, rhs: ServiceCenterModel) -> Bool {
+        lhs.id == rhs.id && lhs.currentLocation == rhs.currentLocation
     }
 }
