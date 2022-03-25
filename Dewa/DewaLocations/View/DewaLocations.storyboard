@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xX7-99-F3h">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dewa Locations-->
+        <scene sceneID="FBj-FK-n9K">
+            <objects>
+                <viewController storyboardIdentifier="DewaLocationsVC" id="bvC-CM-AQZ" customClass="DewaLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJX-Ns-5zV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-1R-9KJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Dewa Locations" id="jj2-9k-IGd"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBm-qm-HVR" customClass="DewaLocationsView" customModule="Dewa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M64-Q0-vYv" customClass="DewaLocationsCollectionView" customModule="Dewa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TRb-dr-brt">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mq7-gp-xvv">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JK6-tm-Kwk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="M64-Q0-vYv" firstAttribute="top" secondItem="lBm-qm-HVR" secondAttribute="top" id="WDH-lZ-BEP"/>
+                                    <constraint firstAttribute="bottom" secondItem="M64-Q0-vYv" secondAttribute="bottom" id="Xns-Ah-pZF"/>
+                                    <constraint firstAttribute="trailing" secondItem="M64-Q0-vYv" secondAttribute="trailing" id="wUg-xc-IOA"/>
+                                    <constraint firstItem="M64-Q0-vYv" firstAttribute="leading" secondItem="lBm-qm-HVR" secondAttribute="leading" id="xsk-gU-Mkb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="collectionView" destination="M64-Q0-vYv" id="xK7-W6-bIe"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4AK-BH-Ueu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4AK-BH-Ueu" firstAttribute="bottom" secondItem="lBm-qm-HVR" secondAttribute="bottom" id="2Jw-6e-LVj"/>
+                            <constraint firstItem="ZDV-1R-9KJ" firstAttribute="leading" secondItem="4AK-BH-Ueu" secondAttribute="leading" id="KaS-iq-Fbc"/>
+                            <constraint firstItem="4AK-BH-Ueu" firstAttribute="trailing" secondItem="lBm-qm-HVR" secondAttribute="trailing" id="NcS-eJ-dUH"/>
+                            <constraint firstItem="lBm-qm-HVR" firstAttribute="leading" secondItem="4AK-BH-Ueu" secondAttribute="leading" id="bk9-9C-7Qe"/>
+                            <constraint firstItem="ZDV-1R-9KJ" firstAttribute="top" secondItem="4AK-BH-Ueu" secondAttribute="top" id="enn-Za-vRU"/>
+                            <constraint firstItem="ZDV-1R-9KJ" firstAttribute="trailing" secondItem="4AK-BH-Ueu" secondAttribute="trailing" id="ieh-59-3qo"/>
+                            <constraint firstItem="lBm-qm-HVR" firstAttribute="top" secondItem="ZDV-1R-9KJ" secondAttribute="bottom" id="yQ3-D4-AzZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dewa Locations" id="uLk-4o-CE1"/>
+                    <navigationItem key="navigationItem" id="c9O-uJ-ezG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="lBm-qm-HVR" id="QVv-mt-cby"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flS-eu-ShG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586.95652173913049" y="1405.5803571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B4O-Rr-nue">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xX7-99-F3h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONf-9e-vDh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bvC-CM-AQZ" kind="relationship" relationship="rootViewController" id="V0L-K4-1bN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXz-72-D1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497.1014492753625" y="1405.5803571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

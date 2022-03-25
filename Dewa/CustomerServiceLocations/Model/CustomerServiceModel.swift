@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import CoreLocation
 
 struct ServiceCenterModel: Hashable {
     let id: Int
@@ -33,7 +32,7 @@ struct ServiceCenterModel: Hashable {
     let image: String
     let map: String
     let services: [String]
-    var currentLocation: CLLocation?
+    var distance: Int?
 
     init(
         id: Int,
@@ -60,7 +59,7 @@ struct ServiceCenterModel: Hashable {
         image: String?,
         map: String?,
         services: [String]?,
-        currentLocation: CLLocation?) {
+        distance: Int?) {
             self.id = id
             self.title = title ?? ""
             self.latitude = latitude ?? ""
@@ -85,7 +84,7 @@ struct ServiceCenterModel: Hashable {
             self.image = image ?? ""
             self.map = map ?? ""
             self.services = services ?? [String]()
-            self.currentLocation = currentLocation
+            self.distance = distance
     }
 
     func hash(into hasher: inout Hasher) {
@@ -93,6 +92,6 @@ struct ServiceCenterModel: Hashable {
     }
 
     static func == (lhs: ServiceCenterModel, rhs: ServiceCenterModel) -> Bool {
-        lhs.id == rhs.id && lhs.currentLocation == rhs.currentLocation
+        lhs.id == rhs.id && lhs.distance == rhs.distance
     }
 }

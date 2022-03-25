@@ -31,6 +31,14 @@
 		040AC83127EDFF1D0074A6CA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC83027EDFF1D0074A6CA /* SDWebImage */; };
 		040AC83327EDFF1D0074A6CA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 040AC83227EDFF1D0074A6CA /* SDWebImageMapKit */; };
 		040AC83527EE12E60074A6CA /* CLLocationDistance+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC83427EE12E60074A6CA /* CLLocationDistance+Extensions.swift */; };
+		040AC83727EE2C3B0074A6CA /* DewaLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC83627EE2C3B0074A6CA /* DewaLocationsView.swift */; };
+		040AC83927EE2C4E0074A6CA /* DewaLocationsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC83827EE2C4E0074A6CA /* DewaLocationsCollectionView.swift */; };
+		040AC83D27EE2D5D0074A6CA /* DevaLocationCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC83B27EE2D5D0074A6CA /* DevaLocationCVC.swift */; };
+		040AC83E27EE2D5D0074A6CA /* DevaLocationCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040AC83C27EE2D5D0074A6CA /* DevaLocationCVC.xib */; };
+		040AC84427EE2DDD0074A6CA /* DewaLocationWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84327EE2DDD0074A6CA /* DewaLocationWebService.swift */; };
+		040AC84627EE2E370074A6CA /* DewaLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84527EE2E370074A6CA /* DewaLocationViewModel.swift */; };
+		040AC84827EE2EF20074A6CA /* DewaLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84727EE2EF20074A6CA /* DewaLocationModel.swift */; };
+		040AC84A27EE39BF0074A6CA /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC84927EE39BE0074A6CA /* locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +65,14 @@
 		040AC82627EDEF060074A6CA /* CustomerServiceLocationCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceLocationCVC.xib; sourceTree = "<group>"; };
 		040AC82A27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		040AC83427EE12E60074A6CA /* CLLocationDistance+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationDistance+Extensions.swift"; sourceTree = "<group>"; };
+		040AC83627EE2C3B0074A6CA /* DewaLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationsView.swift; sourceTree = "<group>"; };
+		040AC83827EE2C4E0074A6CA /* DewaLocationsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationsCollectionView.swift; sourceTree = "<group>"; };
+		040AC83B27EE2D5D0074A6CA /* DevaLocationCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevaLocationCVC.swift; sourceTree = "<group>"; };
+		040AC83C27EE2D5D0074A6CA /* DevaLocationCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevaLocationCVC.xib; sourceTree = "<group>"; };
+		040AC84327EE2DDD0074A6CA /* DewaLocationWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationWebService.swift; sourceTree = "<group>"; };
+		040AC84527EE2E370074A6CA /* DewaLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationViewModel.swift; sourceTree = "<group>"; };
+		040AC84727EE2EF20074A6CA /* DewaLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationModel.swift; sourceTree = "<group>"; };
+		040AC84927EE39BE0074A6CA /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,7 @@
 				040AC7E527ECF4D40074A6CA /* LaunchScreen.storyboard */,
 				040AC7E827ECF4D40074A6CA /* Info.plist */,
 				040AC80C27EDB6DB0074A6CA /* NetWorkService.swift */,
+				040AC84927EE39BE0074A6CA /* locations.json */,
 			);
 			path = Dewa;
 			sourceTree = "<group>";
@@ -109,8 +126,10 @@
 		040AC7FC27ECF8950074A6CA /* DewaLocations */ = {
 			isa = PBXGroup;
 			children = (
-				040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */,
-				040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */,
+				040AC84127EE2DA50074A6CA /* Model */,
+				040AC83A27EE2D270074A6CA /* View */,
+				040AC84027EE2D9B0074A6CA /* ViewModel */,
+				040AC84227EE2DAD0074A6CA /* Network */,
 			);
 			path = DewaLocations;
 			sourceTree = "<group>";
@@ -198,6 +217,51 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		040AC83A27EE2D270074A6CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040AC81727EDD2BD0074A6CA /* DewaLocations.storyboard */,
+				040AC7F027ECF62F0074A6CA /* DewaLocationsVC.swift */,
+				040AC83627EE2C3B0074A6CA /* DewaLocationsView.swift */,
+				040AC83827EE2C4E0074A6CA /* DewaLocationsCollectionView.swift */,
+				040AC83F27EE2D640074A6CA /* CollectionViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040AC83F27EE2D640074A6CA /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				040AC83B27EE2D5D0074A6CA /* DevaLocationCVC.swift */,
+				040AC83C27EE2D5D0074A6CA /* DevaLocationCVC.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		040AC84027EE2D9B0074A6CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				040AC84527EE2E370074A6CA /* DewaLocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		040AC84127EE2DA50074A6CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040AC84727EE2EF20074A6CA /* DewaLocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		040AC84227EE2DAD0074A6CA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				040AC84327EE2DDD0074A6CA /* DewaLocationWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,7 +329,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AC83E27EE2D5D0074A6CA /* DevaLocationCVC.xib in Resources */,
 				040AC81A27EDD2EE0074A6CA /* CustomerServiceLocations.storyboard in Resources */,
+				040AC84A27EE39BF0074A6CA /* locations.json in Resources */,
 				040AC81827EDD2BD0074A6CA /* DewaLocations.storyboard in Resources */,
 				040AC7E727ECF4D40074A6CA /* LaunchScreen.storyboard in Resources */,
 				040AC82827EDEF060074A6CA /* CustomerServiceLocationCVC.xib in Resources */,
@@ -285,17 +351,23 @@
 				040AC82327EDEE690074A6CA /* Observer.swift in Sources */,
 				040AC80F27EDB9180074A6CA /* AppConfiguration.swift in Sources */,
 				040AC81E27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift in Sources */,
+				040AC84427EE2DDD0074A6CA /* DewaLocationWebService.swift in Sources */,
 				040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */,
+				040AC83927EE2C4E0074A6CA /* DewaLocationsCollectionView.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
 				040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */,
 				040AC7DD27ECF4CC0074A6CA /* SceneDelegate.swift in Sources */,
 				040AC82B27EDEF3A0074A6CA /* UICollectionViewCell+Extensions.swift in Sources */,
 				040AC83527EE12E60074A6CA /* CLLocationDistance+Extensions.swift in Sources */,
+				040AC83727EE2C3B0074A6CA /* DewaLocationsView.swift in Sources */,
 				040AC82727EDEF060074A6CA /* CustomerServiceLocationCVC.swift in Sources */,
+				040AC83D27EE2D5D0074A6CA /* DevaLocationCVC.swift in Sources */,
 				040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */,
+				040AC84627EE2E370074A6CA /* DewaLocationViewModel.swift in Sources */,
 				040AC7F327ECF64B0074A6CA /* CustomerServiceLocationsVC.swift in Sources */,
 				040AC80027ECF9840074A6CA /* CustomerServiceViewModel.swift in Sources */,
 				040AC7F127ECF62F0074A6CA /* DewaLocationsVC.swift in Sources */,
+				040AC84827EE2EF20074A6CA /* DewaLocationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +534,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				customerServiceLocationURL = "https://smartapps.dewa.gov.ae/iphone/Locations/Locations-En.xml";
+				dewaLocationURL = "https://smartoffice.dewa.gov.ae/dev/DewaLocations.json";
 			};
 			name = Debug;
 		};
@@ -490,6 +563,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				customerServiceLocationURL = "https://smartapps.dewa.gov.ae/iphone/Locations/Locations-En.xml";
+				dewaLocationURL = "https://smartoffice.dewa.gov.ae/dev/DewaLocations.json";
 			};
 			name = Release;
 		};

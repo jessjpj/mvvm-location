@@ -112,7 +112,7 @@ extension CustomerServiceViewModel {
                 image: image?.string,
                 map: map?.string,
                 services: serviceList,
-                currentLocation: nil)
+                distance: nil)
             models.append(model)
         }
     }
@@ -133,7 +133,22 @@ extension CustomerServiceViewModel {
 
     func updateCurrentLocation(location: CLLocation) {
         for row in models.indices {
-            models[row].currentLocation = location
+            guard let latitude = Double(models[row].latitude)  else {
+                return
+            }
+            guard let longitude = Double(models[row].longitude) else {
+                return
+            }
+            let placeLocation = CLLocation(latitude: latitude, longitude: longitude)
+            let distance = placeLocation.distance(from: location)
+            models[row].distance = Int(distance.inKilometers())
+        }
+        sortModels()
+    }
+
+    func sortModels() {
+        models = models.sorted {
+            ($0.distance ?? 0) < ($1.distance ?? 0)
         }
     }
 }

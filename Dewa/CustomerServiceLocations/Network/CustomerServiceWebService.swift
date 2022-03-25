@@ -9,7 +9,6 @@ import Foundation
 
 class CustomerServiceWebService {
 
-
     func getCustomerServiceLocations(url: URL, completion :@escaping (Data?, Error?) -> ()) {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

@@ -30,18 +30,10 @@ class CustomerServiceLocationCVC: UICollectionViewCell {
             placeholderImage: UIImage(named: "placeholder"))
         titleLabel.text = locationItem.title
         addressLabel.text = locationItem.longAddress
-        guard let capturedLocation = locationItem.currentLocation else {
+        guard let distance = locationItem.distance else {
             return
         }
-        guard let latitude = Double(locationItem.latitude)  else {
-            return
-        }
-        guard let longitude = Double(locationItem.longitude) else {
-            return
-        }
-        let placeLocation = CLLocation(latitude: latitude, longitude: longitude)
-        let distance = placeLocation.distance(from: capturedLocation)
-        distanceLabel.text = "\(Int(distance.inKilometers())) km away"
+        distanceLabel.text = "\(distance) km away"
     }
 
 }

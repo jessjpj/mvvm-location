@@ -14,4 +14,12 @@ final class AppConfiguration {
         }
         return apiBaseURL
     }()
+
+    lazy var dewaLocationURL: String = {
+        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "dewaLocationURL") as? String else {
+            fatalError("ApiBaseURL must not be empty in plist")
+        }
+        return apiBaseURL
+    }()
+
 }
