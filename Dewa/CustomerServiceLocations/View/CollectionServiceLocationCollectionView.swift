@@ -86,15 +86,9 @@ extension CollectionServiceLocationCollectionView {
         guard let models = viewModel?.models else {
             return
         }
-//        var snapshot = Snapshot()
-//        snapshot.appendSections([.all])
-//        snapshot.appendItems(models)
-//        cellDataSource.apply(snapshot, animatingDifferences: animatingDifferences)
-
-        var snapshot = NSDiffableDataSourceSnapshot<Section, ServiceCenterModel>()
+        var snapshot = Snapshot()
         snapshot.appendSections([.all])
-        snapshot.appendItems(models, toSection: .all)
-
+        snapshot.appendItems(models)
         cellDataSource.apply(snapshot, animatingDifferences: animatingDifferences)
     }
 }
