@@ -11,7 +11,7 @@ class CustomerServiceLocationsVC: UIViewController {
 
     var viewModel: CustomerServiceViewModel? {
         didSet {
-            contentView.collectionView.viewModel = viewModel
+            updateView()
         }
     }
     var webservice = CustomerServiceWebService()
@@ -20,11 +20,16 @@ class CustomerServiceLocationsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = contentView
         self.webservice = CustomerServiceWebService()
         self.viewModel = CustomerServiceViewModel(service: self.webservice)
-        self.title = self.viewModel?.title
         loadLocations()
+    }
+
+    func updateView() {
+        guard let viewModel = viewModel else {
+            return
+        }
+        contentView.collectionView.viewModel = viewModel
     }
 
     func loadLocations() {

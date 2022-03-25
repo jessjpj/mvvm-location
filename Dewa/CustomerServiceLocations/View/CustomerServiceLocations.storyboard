@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yL9-KU-Thx">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,61 +13,82 @@
         <scene sceneID="0MW-as-Lfl">
             <objects>
                 <viewController storyboardIdentifier="CustomerServiceLocationsVC" id="015-r4-eRC" customClass="CustomerServiceLocationsVC" customModule="Dewa" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vdA-zu-aRa" customClass="CustomerServiceLocationView" customModule="Dewa" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" id="vdA-zu-aRa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R1V-MD-phy" customClass="CollectionServiceLocationCollectionView" customModule="Dewa" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-s4-wW5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Customer Service Locations" id="TYX-sg-d53"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvd-oF-oww" customClass="CustomerServiceLocationView" customModule="Dewa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="599"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R1V-MD-phy" customClass="CollectionServiceLocationCollectionView" customModule="Dewa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="599"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8lu-8Q-WRf">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rRd-uK-5ac">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jmy-48-4wi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8lu-8Q-WRf">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rRd-uK-5ac">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jmy-48-4wi">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="R1V-MD-phy" secondAttribute="bottom" id="3o8-9W-BK9"/>
+                                    <constraint firstItem="R1V-MD-phy" firstAttribute="top" secondItem="Bvd-oF-oww" secondAttribute="top" id="cH1-yB-uDM"/>
+                                    <constraint firstAttribute="trailing" secondItem="R1V-MD-phy" secondAttribute="trailing" id="vLu-He-9bd"/>
+                                    <constraint firstItem="R1V-MD-phy" firstAttribute="leading" secondItem="Bvd-oF-oww" secondAttribute="leading" id="zzh-sd-hOX"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="collectionView" destination="R1V-MD-phy" id="LSf-6b-HEX"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xO9-Lq-4MV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R1V-MD-phy" firstAttribute="top" secondItem="xO9-Lq-4MV" secondAttribute="top" id="FrM-xY-FPZ"/>
-                            <constraint firstItem="xO9-Lq-4MV" firstAttribute="bottom" secondItem="R1V-MD-phy" secondAttribute="bottom" id="IUD-W3-vQD"/>
-                            <constraint firstItem="xO9-Lq-4MV" firstAttribute="trailing" secondItem="R1V-MD-phy" secondAttribute="trailing" id="My6-Ub-DOP"/>
-                            <constraint firstItem="R1V-MD-phy" firstAttribute="leading" secondItem="xO9-Lq-4MV" secondAttribute="leading" id="uu8-Cl-8uQ"/>
+                            <constraint firstItem="C5d-s4-wW5" firstAttribute="trailing" secondItem="xO9-Lq-4MV" secondAttribute="trailing" id="4MQ-yD-Da4"/>
+                            <constraint firstItem="xO9-Lq-4MV" firstAttribute="trailing" secondItem="Bvd-oF-oww" secondAttribute="trailing" id="9ez-gS-cBn"/>
+                            <constraint firstItem="Bvd-oF-oww" firstAttribute="leading" secondItem="xO9-Lq-4MV" secondAttribute="leading" id="CMu-OE-nar"/>
+                            <constraint firstItem="C5d-s4-wW5" firstAttribute="top" secondItem="xO9-Lq-4MV" secondAttribute="top" id="MlF-DA-m7B"/>
+                            <constraint firstItem="Bvd-oF-oww" firstAttribute="top" secondItem="C5d-s4-wW5" secondAttribute="bottom" id="OcT-Ad-Ljn"/>
+                            <constraint firstItem="xO9-Lq-4MV" firstAttribute="bottom" secondItem="Bvd-oF-oww" secondAttribute="bottom" id="Vqw-53-LSu"/>
+                            <constraint firstItem="C5d-s4-wW5" firstAttribute="leading" secondItem="xO9-Lq-4MV" secondAttribute="leading" id="X7t-Uz-83h"/>
                         </constraints>
-                        <connections>
-                            <outlet property="collectionView" destination="R1V-MD-phy" id="OMg-ST-fFe"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Customer Service Locations" id="qKD-6P-Fhr"/>
                     <navigationItem key="navigationItem" id="qIo-Qr-umH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="contentView" destination="vdA-zu-aRa" id="elM-uk-Obt"/>
+                        <outlet property="contentView" destination="Bvd-oF-oww" id="3ZK-xF-wrL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5g-gw-n08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-586.95652173913049" y="2049.7767857142858"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Title-->
         <scene sceneID="P1h-6L-ndP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yL9-KU-Thx" sceneMemberID="viewController">
+                <navigationController title="Title" automaticallyAdjustsScrollViewInsets="NO" id="yL9-KU-Thx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qsx-Bg-HKZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
