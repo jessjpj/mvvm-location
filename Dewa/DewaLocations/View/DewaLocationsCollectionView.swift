@@ -22,7 +22,6 @@ final class DewaLocationsCollectionView: UICollectionView {
     }
 
     private lazy var cellDataSource = makeDataSource()
-    let locationManager = CLLocationManager()
 
     typealias DataSource = UICollectionViewDiffableDataSource<Section, DewaLocationItem>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Section, DewaLocationItem>
@@ -48,13 +47,9 @@ final class DewaLocationsCollectionView: UICollectionView {
         self.collectionViewLayout = flowLayout
         applySnapshot(animatingDifferences: false)
         self.dataSource = cellDataSource
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
+        let locationManager = LocationManager.shared
+        locationManager.delegate = self
+        locationManager.checkLocationService()
     }
 
     private func configureDelegates() {
@@ -116,12 +111,9 @@ extension DewaLocationsCollectionView: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension DewaLocationsCollectionView: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let capturedLocation = locations.first else {
-            return
-        }
-        viewModel?.updateCurrentLocation(location: capturedLocation)
+extension DewaLocationsCollectionView: LocationManagerDelegate {
+    func didUpdateLocation(location: CLLocation) {
+        viewModel?.updateCurrentLocation(location: location)
         applySnapshot()
     }
 }

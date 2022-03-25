@@ -119,17 +119,6 @@ extension CustomerServiceViewModel {
 }
 
 extension CustomerServiceViewModel {
-    func numberOfSections() -> Int {
-        return 1
-    }
-
-    func numberOfRows() -> Int {
-        return models.count
-    }
-
-    func getItem(at indexPathRow: Int) -> ServiceCenterModel {
-        return models[indexPathRow]
-    }
 
     func updateCurrentLocation(location: CLLocation) {
         for row in models.indices {

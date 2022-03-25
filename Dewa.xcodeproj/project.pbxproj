@@ -39,6 +39,7 @@
 		040AC84627EE2E370074A6CA /* DewaLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84527EE2E370074A6CA /* DewaLocationViewModel.swift */; };
 		040AC84827EE2EF20074A6CA /* DewaLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84727EE2EF20074A6CA /* DewaLocationModel.swift */; };
 		040AC84A27EE39BF0074A6CA /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC84927EE39BE0074A6CA /* locations.json */; };
+		040AC84C27EE40C30074A6CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC84B27EE40C30074A6CA /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		040AC84527EE2E370074A6CA /* DewaLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationViewModel.swift; sourceTree = "<group>"; };
 		040AC84727EE2EF20074A6CA /* DewaLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DewaLocationModel.swift; sourceTree = "<group>"; };
 		040AC84927EE39BE0074A6CA /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = SOURCE_ROOT; };
+		040AC84B27EE40C30074A6CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				040AC82227EDEE690074A6CA /* Observer.swift */,
+				040AC84B27EE40C30074A6CA /* LocationManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				040AC83527EE12E60074A6CA /* CLLocationDistance+Extensions.swift in Sources */,
 				040AC83727EE2C3B0074A6CA /* DewaLocationsView.swift in Sources */,
 				040AC82727EDEF060074A6CA /* CustomerServiceLocationCVC.swift in Sources */,
+				040AC84C27EE40C30074A6CA /* LocationManager.swift in Sources */,
 				040AC83D27EE2D5D0074A6CA /* DevaLocationCVC.swift in Sources */,
 				040AC80827ECFA920074A6CA /* CustomerServiceModel.swift in Sources */,
 				040AC84627EE2E370074A6CA /* DewaLocationViewModel.swift in Sources */,
