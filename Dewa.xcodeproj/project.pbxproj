@@ -290,8 +290,8 @@
 			children = (
 				040AC84F27EE483D0074A6CA /* LocationDetailVC.swift */,
 				040AC85527EE4A080074A6CA /* LocationDetailView.swift */,
-				040AC85127EE48500074A6CA /* LocationDetailViewModel.swift */,
 				040AC85327EE49CA0074A6CA /* LocationDetail.storyboard */,
+				040AC85127EE48500074A6CA /* LocationDetailViewModel.swift */,
 			);
 			path = LocationDetail;
 			sourceTree = "<group>";
