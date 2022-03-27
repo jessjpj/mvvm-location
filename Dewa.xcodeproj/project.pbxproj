@@ -45,6 +45,7 @@
 		040AC85427EE49CA0074A6CA /* LocationDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040AC85327EE49CA0074A6CA /* LocationDetail.storyboard */; };
 		040AC85627EE4A080074A6CA /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC85527EE4A080074A6CA /* LocationDetailView.swift */; };
 		040AC85827EE4BB80074A6CA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC85727EE4BB80074A6CA /* UIViewController+Extensions.swift */; };
+		040AC85C27F0618B0074A6CA /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AC85B27F0618B0074A6CA /* CustomAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		040AC85327EE49CA0074A6CA /* LocationDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationDetail.storyboard; sourceTree = "<group>"; };
 		040AC85527EE4A080074A6CA /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		040AC85727EE4BB80074A6CA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		040AC85B27F0618B0074A6CA /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +292,7 @@
 			children = (
 				040AC84F27EE483D0074A6CA /* LocationDetailVC.swift */,
 				040AC85527EE4A080074A6CA /* LocationDetailView.swift */,
+				040AC85B27F0618B0074A6CA /* CustomAnnotationView.swift */,
 				040AC85327EE49CA0074A6CA /* LocationDetail.storyboard */,
 				040AC85127EE48500074A6CA /* LocationDetailViewModel.swift */,
 			);
@@ -389,6 +392,7 @@
 				040AC81E27EDEB7F0074A6CA /* CollectionServiceLocationCollectionView.swift in Sources */,
 				040AC84427EE2DDD0074A6CA /* DewaLocationWebService.swift in Sources */,
 				040AC80227ECFA090074A6CA /* CustomerServiceWebService.swift in Sources */,
+				040AC85C27F0618B0074A6CA /* CustomAnnotationView.swift in Sources */,
 				040AC83927EE2C4E0074A6CA /* DewaLocationsCollectionView.swift in Sources */,
 				040AC7DB27ECF4CC0074A6CA /* AppDelegate.swift in Sources */,
 				040AC80D27EDB6DB0074A6CA /* NetWorkService.swift in Sources */,

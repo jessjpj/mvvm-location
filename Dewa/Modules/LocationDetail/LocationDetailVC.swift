@@ -25,4 +25,8 @@ class LocationDetailVC: UIViewController {
         contentView.viewModel = viewModel
     }
 
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
 }
